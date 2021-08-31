@@ -15,14 +15,32 @@
     <img id="pic" src="food1.jpg">
     <button type="button" onclick="document.getElementById('test').innerHTML='good morning'"> Click </button>
     <button type="button" onclick="document.getElementById('pic').src='food2.jpg' "> Click here to change the photo </button>
-    <script>
-        var a = 1;
-        var b = 11;
-        for (var i = a; i <= b; i++) {
-            if (i % 2 == 0)
-                window.alert(i);
-        }
-    </script>
+    <ol>
+        <li>Places:</li>
+        <ul>
+            <li id="places"></li>
+        </ul>
+        <script>
+            const places = [
+                "Alhambra",
+                "Aibaicin"
+            ];
+
+            document.getElementById('places').innerHTML = places;
+        </script>
+        <li>Foods:</li>
+        <ul>
+            <li id="foods"></li>
+        </ul>
+        <script>
+            const foods = [
+                "potato",
+                "meat",
+                "fish"
+            ];
+            document.getElementById('foods').innerHTML = foods;
+        </script>
+    </ol>
 
 </body>
 
