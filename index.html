@@ -3,48 +3,14 @@
 
 <head>
     <title>My page</title>
+    <script src="script.js">
+    </script>
 </head>
 
 <body>
-    <script>
-        var x = 3;
-        var y = 2;
+    <input type="text" id="input">
+    <button onclick="game(x)"> Play </button>
 
-        function sum(x, y) {
-            return x + y;
-        };
-
-        function rest(x, y) {
-            return x - y;
-        };
-
-        function multiplication(x, y) {
-            return x * y;
-        };
-
-        function div(x, y) {
-            return x / y;
-        };
-
-        function mod(x, y) {
-            return x % y;
-        };
-        var a = sum(x, y);
-        var b = rest(x, y);
-        var c = multiplication(x, y);
-        var d = div(x, y);
-        var e = mod(x, y);
-    </script>
-    <div style="width: 6cm; height: 6cm; background-color: aqua">
-        <p style="position: absolute; top: 2cm; left: 2.5cm;"> x=3, y=2 </p>
-        <p style="position: absolute; top: 3cm; left: 2.5cm;" id="exercises"></p>
-        <br>
-        <button style=" position: absolute; top: 0cm; left:0cm; " type="button " onclick="document.getElementById( 'exercises').innerHTML='3+2='+a ">3+2</button>
-        <button style=" position: absolute; top: 0cm; left:6cm " type="button " onclick="document.getElementById( 'exercises').innerHTML='3-2='+b ">3-2</button>
-        <button style=" position: absolute; top:6cm;left:0cm; " type="button " onclick="document.getElementById( 'exercises').innerHTML='3*2='+c ">3*2</button>
-        <button style=" position: absolute; top:6cm; left:6cm; " type="button " onclick="document.getElementById( 'exercises').innerHTML='3/2='+d ">3/2</button>
-        <button style="position: absolute; top: 6cm; left:3cm; " type="button" onclick="document.getElementById( 'exercises').innerHTML='3%2=' +e ">3%2</button>
-    </div>
 </body>
 
 </html>
