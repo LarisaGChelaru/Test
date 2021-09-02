@@ -21,8 +21,17 @@
     <button type="button" onclick="document.getElementById('pic').src='alhambra.jpg'">Image of Alhambra</button><br>
     <img id="pic">
     <p>So, what do we need to remember? Click The button below</p>
-    <button type="button" onclick="document.getElementById('story').style=''">See</button>
+    <button type="button" onclick="document.getElementById('story').style.backgroundColor='aqua'">See</button>
     <!--Here I need to add some styles-->
+
+    <input type="text" id="fname">
+    <input type="text" id="sname">
+    <input type="text" id="cage">
+    <input type="text" id="cnumber">
+
+    <button onclick="GetInfo(cs)">Upload</button>
+    <button onclick="Show(cs)">Show</button>
+    <p id="text"></p>
 </body>
 
 </html>
