@@ -2,15 +2,27 @@
 <html>
 
 <head>
-    <title>My page</title>
+    <title> My page</title>
     <script src="script.js">
     </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <p>Let`s play a game: try to guess the number. If you win, click the next button</p>
     <input type="text" id="input">
     <button onclick="game(x)"> Play </button>
-
+    <button type="button" onclick="document.getElementById('continue').innerHTML='Now,let`s move on'">Next</button>
+    <p id="continue"></p>
+    <p>Do you know the story of Alhambra? If not, click the next button</p>
+    <button type="button" onclick="document.getElementById('story').innerHTML='Designed as a military zone at the beginning, the Alhambra became the royal residence and court of Granada in the mid-13th century after the establishment of the Nasrid Kingdom and the construction of the first palace by the founding king Mohammed ibn Yusuf Ben Nasr, better known as Alhamar.'">Next</button>
+    <p id='story'></p>
+    <p>But how do you thing it looks like? Click the next button to show an image</p>
+    <button type="button" onclick="document.getElementById('pic').src='alhambra.jpg'">Image of Alhambra</button><br>
+    <img id="pic">
+    <p>So, what do we need to remember? Click The button below</p>
+    <button type="button" onclick="document.getElementById('story').style=''">See</button>
+    <!--Here I need to add some styles-->
 </body>
 
 </html>
